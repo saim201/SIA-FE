@@ -10,7 +10,7 @@ import { ProductService } from '../../../shared/services/product.service';
 })
 export class FashionThreeComponent implements OnInit, OnDestroy {
 
-  public products : Product[] = [];
+  public products: Product[] = [];
   public productCollections: any[] = [];
 
   constructor(public productService: ProductService) {
@@ -43,7 +43,7 @@ export class FashionThreeComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-  	document.body.classList.remove('box-layout-body');
+    document.body.classList.remove('box-layout-body');
   }
 
   // Product Tab collection
@@ -54,5 +54,5 @@ export class FashionThreeComponent implements OnInit, OnDestroy {
       }
     })
   }
-  
+
 }
