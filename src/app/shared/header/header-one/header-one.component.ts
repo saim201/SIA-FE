@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { UsersService } from '../../services/users.service';
 
 @Component({
   selector: 'app-header-one',
@@ -12,9 +13,10 @@ export class HeaderOneComponent implements OnInit {
   @Input() topbar: boolean = true; // Default True
   @Input() sticky: boolean = false; // Default false
   
+  isLoggedIn=this.usersService.isLoggedIn;
   public stick: boolean = false;
 
-  constructor() { }
+  constructor(public usersService : UsersService) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +30,10 @@ export class HeaderOneComponent implements OnInit {
   	} else {
   	  this.stick = false;
   	}
+  }
+  onLogout(){
+    console.log("In Logout");
+    this.isLoggedIn=!this.usersService.signOut();
   }
 
 }

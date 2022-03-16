@@ -29,12 +29,12 @@ export class FashionThreeComponent implements OnInit, OnDestroy {
   public ProductSliderConfig: any = ProductSlider;
 
   public sliders = [{
-    title: 'welcome to fashion',
-    subTitle: 'Men fashion',
+    title: 'welcome to Shop it All',
+    subTitle: 'We Have it All',
     image: 'assets/images/slider/5.jpg'
   }, {
-    title: 'welcome to fashion',
-    subTitle: 'Women fashion',
+    title: 'Best deals from your favourite stores',
+    subTitle: 'SHOP CARE FREE',
     image: 'assets/images/slider/6.jpg'
   }];
 

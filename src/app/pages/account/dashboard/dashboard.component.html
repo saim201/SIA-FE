@@ -33,11 +33,8 @@
                 <div class="dashboard-right">
                     <div class="dashboard">
                         <div class="page-title">
-                            <h2>My Dashboard</h2>
-                        </div>
-                        <div class="welcome-msg">
-                            <p>Hello, MARK JECNO !</p>
-                            <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
+                            
+                            <h2>Hey {{userData.firstName}} {{userData.lastName}}</h2>
                         </div>
                         <div class="box-account box-info">
                             <div class="box-head">
@@ -48,12 +45,15 @@
                                     <div class="box">
                                         <div class="box-title">
                                             <h3>Contact Information</h3>
-                                            <a href="javascript:void(0)">Edit</a>
+                                            <!-- <a href="javascript:void(0)">Edit</a> -->
                                         </div>
                                         <div class="box-content">
-                                            <h6>MARK JECNO</h6>
-                                            <h6>MARk-JECNO@gmail.com</h6>
-                                            <h6><a href="javascript:void(0)">Change Password</a></h6>
+                                            <h6><b>Full Name :</b>{{userData.firstName}} {{userData.lastName}}</h6>
+                                            
+                                            <h6><b>Email Address :</b>{{userData.email}}</h6>
+                                            <h6><b>Phone Number:</b>{{userData.phoneNumber}}</h6>
+                                            <h6><b>Gender :</b>{{userData.gender}}</h6>
+                                            <!-- <h6><a href="javascript:void(0)">Change Password</a></h6> -->
                                         </div>
                                     </div>
                                 </div>
