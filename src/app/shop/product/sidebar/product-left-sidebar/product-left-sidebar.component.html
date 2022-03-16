@@ -74,13 +74,13 @@
                   <h3>
                       {{ (product?.price | discount:product) * productService.Currency?.price | currency: productService.Currency?.currency:'symbol' }}
                   </h3>
-                  <ul class="color-variant" *ngIf="Color(product?.variants).length">
+                  <!-- <ul class="color-variant" *ngIf="Color(product?.variants).length">
                     <li [class]="color" [class.active]="activeSlide == i.toString()" 
                         *ngFor="let color of Color(product?.variants); index as i" 
                         [ngStyle]="{'background-color': color}"
                         (click)="owlCar.to(activeSlide = i.toString())">
                     </li>
-                  </ul>
+                  </ul> -->
                   <app-stock-inventory [stock]="product?.stock"></app-stock-inventory>
                   <div class="product-description border-product">
                     <h6 class="product-title size-text" *ngIf="Size(product.variants).length">
