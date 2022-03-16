@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { UsersService } from 'src/app/shared/services/users.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  username: String = "";
+  pass: String ="";
+
+  constructor(public authService: AuthService, public usersService: UsersService ) { }
 
   ngOnInit(): void {
   }
+
+
+  onSignin(data){
+    this.authService.login({ "username": data.username, "password": data.password }).subscribe(
+      (response: any) => {
+  
+        if (response.access_token) {
+          this.usersService.token = response.access_token;
+          this.usersService.signIn(this.username).subscribe(
+            (response: any) => {
+                localStorage.setItem('currentUser', JSON.stringify(response));
+            }
+          )
+          localStorage.setItem('isLoggedin', 'true');
+        }
+      }
+    );
+
+    }
+
 
 }
