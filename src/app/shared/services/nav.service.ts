@@ -65,15 +65,16 @@ export class NavService {
 
 
 		{
-			title: 'Shop', type: 'sub', active: false, children: [
+			title: 'Stores', type: 'link', active: false,path:'/pages/blog/right/sidebar'
+			// , children: [
 				// { path: '/shop/collection/left/sidebar', title: 'left-sidebar', type: 'link' },
 				// { path: '/shop/collection/right/sidebar', title: 'right-sidebar', type: 'link' },
-				{ path: '/shop/collection/no/sidebar', title: 'no-sidebar', type: 'link' }
+				// { path: '/shop/collection/no/sidebar', title: 'no-sidebar', type: 'link' }
 				// { path: '/shop/collection/infinitescroll', title: 'Infinite Scroll', type: 'link' }
-			]
+			// ]
 		},
 		{
-			title: 'Products', type: 'sub', active: false, children: [
+			title: 'Categories', type: 'sub', active: false, children: [
 				// {
 				// 	title: 'sidebar', type: 'sub', active: false, children: [
 				// 		{ path: '/shop/product/left/sidebar/trim-dress', title: 'left-sidebar', type: 'link' },
@@ -88,7 +89,7 @@ export class NavService {
 			]
 		},
 		{
-			title: 'Features', type: 'sub', megaMenu: true, badge: true, badgeText: 'new', active: false, children: [
+			title: 'SALE', type: 'sub', megaMenu: true, badge: true, badgeText: '50-70% off', active: false, children: [
 				{
 					title: 'portfolio', type: 'sub', active: false, children: [
 						// { path: '/pages/portfolio/grid/two', title: 'portfolio-grid-2', type: 'link' },
@@ -137,7 +138,7 @@ export class NavService {
 			]
 		},
 		{
-			title: 'pages', type: 'sub', active: false, children: [
+			title: 'Setup Store', type: 'sub', active: false, children: [
 				{
 					title: 'account', type: 'sub', active: false, children: [
 						{ path: '/pages/wishlist', title: 'wishlist', type: 'link' },
@@ -170,7 +171,7 @@ export class NavService {
 			]
 		},
 		{
-			title: 'blogs', type: 'sub', active: false, children: [
+			title: 'Contact us', type: 'sub', active: false, children: [
 				{ path: '/pages/blog/left/sidebar', title: 'left-sidebar', type: 'link' },
 				{ path: '/pages/blog/right/sidebar', title: 'right-sidebar', type: 'link' },
 				{ path: '/pages/blog/no/sidebar', title: 'no-sidebar', type: 'link' },
