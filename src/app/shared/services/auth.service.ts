@@ -25,6 +25,7 @@ const HTTP_OPTIONS = {
         console.error(
           `Backend returned code ${error.status},` +
           `body was: ${error.error}`);
+          alert("Bad credentials Try again");
       }
       return throwError(
         'Something bad happened; please try again later.');

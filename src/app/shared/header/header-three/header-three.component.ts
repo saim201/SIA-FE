@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { UsersService } from 'src/app/shared/services/users.service';
 
 @Component({
   selector: 'app-header-three',
@@ -13,11 +14,14 @@ export class HeaderThreeComponent implements OnInit {
   @Input() topbar: boolean = true; // Default True
   @Input() sticky: boolean = false; // Default false
   
+  
+  public isLoggedIn : boolean;
   public stick: boolean = false;
 
-  constructor() { }
+  constructor(public usersService : UsersService) { }
 
   ngOnInit(): void {
+    this.isLoggedIn=this.usersService.isLoggedIn;
   }
 
   // @HostListener Decorator
@@ -29,6 +33,11 @@ export class HeaderThreeComponent implements OnInit {
     } else {
       this.stick = false;
     }
+  }
+
+  onLogout(){
+    console.log("In Logout");
+    this.isLoggedIn=!this.usersService.signOut();
   }
 
 }
