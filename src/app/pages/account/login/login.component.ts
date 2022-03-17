@@ -11,8 +11,7 @@ import { UsersService } from 'src/app/shared/services/users.service';
 })
 export class LoginComponent implements OnInit {
 
-  username: String = "";
-  pass: String ="";
+ 
 
   constructor(public authService: AuthService, public usersService: UsersService, public router: Router ) { }
 
@@ -30,6 +29,7 @@ export class LoginComponent implements OnInit {
             (response: any) => {
                 this.usersService.userdata=response;
                 localStorage.setItem('currentUser', JSON.stringify(response));
+                alert("Successfully Logged in");
             }
           )
           this.router.navigate(['/pages/dashboard']);

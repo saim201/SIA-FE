@@ -18,13 +18,13 @@
                     <div class="block-content">
                         <ul>
                             <li class="active"><a href="javascript:void(0)">Account Info</a></li>
-                            <li><a href="javascript:void(0)">Address Book</a></li>
+                            <!-- <li><a href="javascript:void(0)">Address Book</a></li>
                             <li><a href="javascript:void(0)">My Orders</a></li>
                             <li><a href="javascript:void(0)">My Wishlist</a></li>
                             <li><a href="javascript:void(0)">Newsletter</a></li>
                             <li><a href="javascript:void(0)">My Account</a></li>
-                            <li><a href="javascript:void(0)">Change Password</a></li>
-                            <li class="last"><a href="javascript:void(0)">Log Out</a></li>
+                            <li><a href="javascript:void(0)">Change Password</a></li> -->
+                            <li class="last" (click)="onLogOut()"><a href="javascript:void(0)">Log Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,15 +44,14 @@
                                 <div class="col-sm-6">
                                     <div class="box">
                                         <div class="box-title">
-                                            <h3>Contact Information</h3>
+                                            <h3>General Information</h3>
                                             <!-- <a href="javascript:void(0)">Edit</a> -->
                                         </div>
                                         <div class="box-content">
-                                            <h6><b>Full Name :</b>{{userData.firstName}} {{userData.lastName}}</h6>
-                                            
-                                            <h6><b>Email Address :</b>{{userData.email}}</h6>
-                                            <h6><b>Phone Number:</b>{{userData.phoneNumber}}</h6>
-                                            <h6><b>Gender :</b>{{userData.gender}}</h6>
+                                            <h6><b>Full Name : </b> {{userData.firstName}} {{userData.middleName}} {{userData.lastName}} </h6>
+                                            <h6><b>Email Address : </b>{{userData.email}} </h6>
+                                            <h6><b>Phone Number : </b>{{userData.phoneNumber}} </h6>
+                                            <h6><b>Gender : </b> {{userData.gender}} </h6>
                                             <!-- <h6><a href="javascript:void(0)">Change Password</a></h6> -->
                                         </div>
                                     </div>
@@ -60,12 +59,12 @@
                                 <div class="col-sm-6">
                                     <div class="box">
                                         <div class="box-title">
-                                            <h3>Newsletters</h3>
-                                            <a href="javascript:void(0)">Edit</a>
+                                            <h3>Previous Orders</h3>
+                                            <!-- <a href="javascript:void(0)">Edit</a> -->
                                         </div>
                                         <div class="box-content">
                                             <p>
-                                                You are currently not subscribed to any newsletter.
+                                                You have no previous orders at this time
                                             </p>
                                         </div>
                                     </div>
@@ -81,15 +80,19 @@
                                         <div class="col-sm-6">
                                             <h6>Default Billing Address</h6>
                                             <address>
-                                                You have not set a default billing address.<br>
-                                                <a href="javascript:void(0)">Edit Address</a>
+                                                <br>
+                                                <p>{{userData.address1}}, {{userData.street}}, {{userData.state}}</p>
+                                                <p>{{userData.city}}, {{userData.country}}</p>
+                                                <!-- <a href="javascript:void(0)">Edit Address</a> -->
                                             </address>
                                         </div>
                                         <div class="col-sm-6">
                                             <h6>Default Shipping Address</h6>
                                             <address>
-                                                You have not set a default shipping address.<br>
-                                                <a href="javascript:void(0)">Edit Address</a>
+                                               <br>
+                                               <p>{{userData.address1}}, {{userData.street}}, {{userData.state}}</p>
+                                               <p>{{userData.city}}, {{userData.country}}</p>
+                                                <!-- <a href="javascript:void(0)">Edit Address</a> -->
                                             </address>
                                         </div>
                                     </div>
