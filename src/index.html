@@ -15,7 +15,7 @@
     <app-root></app-root>
     <script src="https://checkout.stripe.com/checkout.js"></script>
     <!-- facebook chat section start -->
-	<div id="fb-root"></div>
+	<!-- <div id="fb-root"></div>
 	<script>
 	  (function(d, s, id) {
 	    var js, fjs = d.getElementsByTagName(s)[0];
@@ -25,12 +25,28 @@
 	    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
 	    fjs.parentNode.insertBefore(js, fjs);
 	  }(document, 'script', 'facebook-jssdk'));
-	</script>
+	</script> -->
 
 	<!-- Your customer chat code -->
-	<div id="fb-chat" class="fb-customerchat" attribution=setup_tool page_id="2123438804574660" theme_color="#ff4c3b" logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?" logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?">
-	</div>
+	<!-- <div id="fb-chat" class="fb-customerchat" attribution=setup_tool page_id="2123438804574660" theme_color="#ff4c3b" logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?" logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?">
+	</div> -->
 	<!-- facebook chat section end -->
+
+
+	<script type="text/javascript">
+		window.BE_API = window.BE_API || {};
+	window.BE_API.onLoad = function () {
+    window.BE_API.resetSession();
+	};
+		window.__be = window.__be || {};
+		window.__be.id = "62325edde8190f0007da3425";
+		(function() {
+			var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+			be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+		})();
+	  </script>
+
 </body>
 
 </html>
