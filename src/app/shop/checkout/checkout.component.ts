@@ -58,7 +58,7 @@ export class CheckoutComponent implements OnInit {
       }
     });
     handler.open({
-      name: 'Multikart',
+      name: 'Shop-It-All',
       description: 'Online Fashion Store',
       amount: this.amount * 100
     }) 

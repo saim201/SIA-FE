@@ -54,9 +54,7 @@
                                     <div class="field-label">Country</div>
                                     <select name="country" [formControl]="checkoutForm.controls['country']">
                                         <option value="" selected>Select Country</option>
-                                        <option value="India">India</option>
-                                        <option value="USA">USA</option>
-                                        <option value="Australia">Australia</option>
+                                        <option value="Pakistan">Pakistan</option>
                                     </select>
                                     <div *ngIf="checkoutForm.controls.country.touched && checkoutForm.controls.country.errors?.required" class="text text-danger">
                                      Country is required
@@ -192,7 +190,7 @@
                                                 <li>
                                                     <div class="radio-option">
                                                         <input type="radio" [(ngModel)]="payment" [value]="'Stripe'"  name="payment-group" id="payment-2">
-                                                        <label for="payment-2">Cash-On-Delivery
+                                                        <label for="payment-2">Stripe
                                                             <span class="small-text">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span></label>
                                                     </div>
                                                 </li>
@@ -200,7 +198,7 @@
                                                     <div class="radio-option paypal">
                                                         <input type="radio" [(ngModel)]="payment" [value]="'Paypal'" name="payment-group" id="payment-3">
                                                         <!-- <label for="payment-3">JazzCash API<span class="image"><img src="assets/images/paypal.png" alt="" /></span></label> -->
-                                                        <label for="payment-3">JazzCash API</label>
+                                                        <label for="payment-3">Cash On Delivery</label>
                                                     </div>
                                                 </li>
                                             </ul>
