@@ -11,28 +11,33 @@ const routes: Routes = [
     redirectTo: 'home/fashion-3',
     pathMatch: 'full'
   },
+
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
+
   {
     path: 'shop',
     component: ShopComponent,
     loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule)
   },
+
   { 
     path: 'pages',
     component: PagesComponent,
     loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) 
   },
+
   { 
     path: 'elements', 
     component: ElementsComponent,
     loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule) },
   {
     path: '**', // Navigate to Home Page if not found any page
-    redirectTo: 'home/fashion-3',
+    redirectTo: 'home/home1',
   },
+  
 ];
 
 @NgModule({

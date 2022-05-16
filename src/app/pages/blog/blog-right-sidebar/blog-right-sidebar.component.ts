@@ -12,4 +12,10 @@ export class BlogRightSidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
+  myfunction(){
+    localStorage.setItem('type','brand');
+  }
+
 }

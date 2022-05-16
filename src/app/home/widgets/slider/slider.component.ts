@@ -22,4 +22,8 @@ export class SliderComponent implements OnInit {
 
   public HomeSliderConfig: any = HomeSlider;
 
+  myfunction(){
+    localStorage.setItem('type','All_Products');
+  }
+
 }

@@ -20,29 +20,36 @@
                         <!-- side-bar colleps block stat -->
                         <div class="collection-filter-block">
                             <!-- brand filter start -->
-                            <app-brands [products]="products" [brands]="brands" (brandsFilter)="updateFilter($event)">
-                            </app-brands>
+                            <ng-container *ngIf="type != 'brand'">
+                                <app-brands [products]="products" [brands]="brands" (brandsFilter)="updateFilter($event)">
+                                </app-brands>
+                            </ng-container>
+
                             <!-- color filter start here -->
                             <app-colors [products]="products" [colors]="colors" (colorsFilter)="updateFilter($event)">
                             </app-colors>
+
                             <!-- size filter start here -->
                             <app-size [products]="products" [size]="size" (sizeFilter)="updateFilter($event)">
                             </app-size>
+
                             <!-- price filter start here -->
                             <app-price [min]="minPrice" [max]="maxPrice" (priceFilter)="updateFilter($event)">
                             </app-price>
                         </div>
                         <!-- silde-bar colleps block end here -->
                         <!-- side-bar single product slider start -->
-                        <app-product-box-vertical-slider [title]="'New Products'">
-                        </app-product-box-vertical-slider>
+                            <!-- <app-product-box-vertical-slider [title]="'New Products'">
+                            </app-product-box-vertical-slider> -->
+
                         <!-- side-bar single product slider end -->
                         <!-- side-bar banner start here -->
-                        <div class="collection-sidebar-banner">
-                            <a [routerLink]="['/shop/collection/left/sidebar']">
-                                <img src="assets/images/collection-sidebar-banner.png" class="img-fluid" alt="banner">
-                            </a>
-                        </div>
+                            <!-- <div class="collection-sidebar-banner">
+                                <a [routerLink]="['/shop/collection/left/sidebar']">
+                                    <img src="assets/images/collection-sidebar-banner.png" class="img-fluid" alt="banner">
+                                </a>
+                            </div> -->
+                            
                         <!-- side-bar banner end here -->
                     </div>
                 </div>
@@ -50,8 +57,8 @@
                     <div class="page-main-content">
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="top-banner-wrapper">
-                                    <a [routerLink]="['/shop/collection/left/sidebar']">
+                                <div class="top-banner-wrapper" *ngIf="type == 'brand'">
+                                    <a [routerLink]="['/shop/product/no/sidebar/']">
                                         <img src="assets/images/collection-banner.jpg" class="img-fluid " alt="">
                                     </a>
                                     <div class="top-banner-content small-section">
@@ -101,7 +108,7 @@
                                                 <img src="assets/images/empty-search.jpg" class="img-fluid mb-4">
                                                 <h3>Sorry! Couldn't find the product you were looking For!!! </h3>
                                                 <p>Please check if you have misspelt something or try searching with other words.</p>
-                                                <a [routerLink]="['/shop/collection/left/sidebar']" class="btn btn-solid">continue shopping</a>
+                                                <a [routerLink]="['/shop/product/no/sidebar/']" class="btn btn-solid">continue shopping</a>
                                             </div>
                                         </div>
                                     </div>

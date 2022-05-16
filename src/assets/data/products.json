@@ -1,14 +1,15 @@
-[{
+[
+    {
         "id": 1,
-        "title": "trim dress",
+        "title": "testing",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
         "type": "fashion",
-        "brand": "nike",
+        "brand": "testing_zara",
         "collection": ["new products"],
         "category": "Women",
         "price": 145,
         "sale": true,
-        "discount": "40",
+        "discount": "5",
         "stock": 5,
         "new": true,
         "tags": [
@@ -108,9 +109,10 @@
                 ]
             }
         ]
-    }, {
+    }, 
+    {
         "id": 2,
-        "title": "belted dress",
+        "title": "belted dress (tesing)",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
         "type": "fashion",
         "brand": "zara",
@@ -247,12 +249,13 @@
                 ]
             }
         ]
-    }, {
+    }, 
+    {
         "id": 3,
         "title": "fitted dress",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
         "type": "fashion",
-        "brand": "denim",
+        "brand": "levis",
         "collection": ["featured products"],
         "category": "Women",
         "price": 174,
@@ -321,7 +324,9 @@
                 ]
             }
         ]
-    }, {
+    }, 
+
+    {
         "id": 4,
         "title": "belted top",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
@@ -395,7 +400,8 @@
                 ]
             }
         ]
-    }, {
+    }, 
+    {
         "id": 5,
         "title": "waist dress",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
@@ -2518,7 +2524,7 @@
         "type": "shoes",
         "brand": "decathlon",
         "collection": ["best sellers"],
-        "category": "shoes",
+        "category": "Men",
         "price": 150,
         "sale": false,
         "discount": "60",
@@ -2609,7 +2615,7 @@
         "type": "shoes",
         "brand": "nike",
         "collection": ["best sellers"],
-        "category": "shoes",
+        "category": "Men",
         "price": 299,
         "sale": false,
         "discount": "40",
@@ -2702,7 +2708,7 @@
         "type": "shoes",
         "brand": "puma",
         "collection": ["best sellers"],
-        "category": "shoes",
+        "category": "Men",
         "price": 260,
         "sale": true,
         "discount": "10",
@@ -2803,7 +2809,7 @@
         "type": "shoes",
         "brand": "adidas",
         "collection": ["best sellers", "new arrival"],
-        "category": "shoes",
+        "category": "Men",
         "price": 450,
         "sale": true,
         "discount": "20",

@@ -7,27 +7,27 @@ import 'rxjs/add/operator/map';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { TokenService } from './token.service';
 
-// class UserModel{
-// 	fname: string;
-// 	mname: string;
-// 	lname: string;
-// 	city: string;
-// 	country: string;
-// 	username: string;
-// 	phonenumber: string;
-// 	address1: string;
-// 	address2: string;
-// 	dob: string;
-// 	email: string;
-// 	id: Number;
-// 	state:String;
-// 	street:string;
-// 	gender:string;
+class UserModel{
+	fname: string;
+	mname: string;
+	lname: string;
+	city: string;
+	country: string;
+	username: string;
+	phonenumber: string;
+	address1: string;
+	address2: string;
+	dob: string;
+	email: string;
+	id: Number;
+	state:String;
+	street:string;
+	gender:string;
 	
-// 	constructor(fname,mname,lname,city,){
+	constructor(fname,mname,lname,city,){
 
-// 	}
-// }
+	}
+}
 
 
 @Injectable({

@@ -32,8 +32,8 @@ export class LoginComponent implements OnInit {
                 alert("Successfully Logged in");
             }
           )
-          this.router.navigate(['/pages/dashboard']);
-          this.usersService.isLoggedIn = true;
+            this.router.navigate(['/pages/dashboard']);
+            this.usersService.isLoggedIn = true;
 
         }
       }

@@ -27,7 +27,7 @@ const routes: Routes = [
   //   component: FashionTwoComponent
   // },
   {
-    path: 'fashion-3',
+    path: 'home1',
     component: FashionThreeComponent
   }
   // {

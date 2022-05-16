@@ -20,6 +20,7 @@ export class GridComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.setGrid.emit('col-lg-4');
   }
 
   setGridLayout(value: string) {

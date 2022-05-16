@@ -11,7 +11,7 @@
 	                <h1>{{slider.subTitle}}</h1>
 	                <a [routerLink]="['/shop/collection/left/sidebar']" 
 	                   [queryParams]="{ category: category}" 
-	                   class="btn btn-solid" [ngClass]="buttonClass">
+	                   class="btn btn-solid" [ngClass]="buttonClass" (click)="myfunction()">
 	                   {{buttonText}}
 	                </a>
 	              </div>
